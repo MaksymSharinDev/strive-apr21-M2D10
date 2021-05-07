@@ -12,8 +12,34 @@ section{
 hr{
     border-top: 2px solid rgba(0,0,0,.1)
 }
-featuredMasonry .row{
-    width: 100%
+.masonry-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
+.masonry-wrapper>*{
+    border: 1px solid black;
+}
+.img-big {
+    height: 300px;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.img-side {
+    height: 300px;
+    object-fit: fill;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.img-small {
+    height:150px
+    object-fit: fill;
+    grid-column: span 1;
+    grid-row: span 1;
+}
 
