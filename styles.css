@@ -37,9 +37,34 @@ hr{
 }
 
 .img-small {
-    height:150px
+    height:150px;
     object-fit: fill;
     grid-column: span 1;
     grid-row: span 1;
 }
 
+.news-preview .title{
+    position: absolute;
+    color: white;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.news-preview img{
+    width: 100%;
+    height: 100%;
+}
+.news-preview .comment{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    right: 5%
+
+}
+.news-preview .time{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 5%
+}
